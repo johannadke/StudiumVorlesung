@@ -1,3 +1,4 @@
+/*
 package ModerneProgrammierkonzepte.GUI;
 
 import ModerneProgrammierkonzepte.GUI.GuiButton;
@@ -27,3 +28,4 @@ public class Processing extends PApplet {
         //bgCol = (bgCol + 1) % 128;
     }
 }
+*/

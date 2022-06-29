@@ -1,3 +1,4 @@
+/*
 package ModerneProgrammierkonzepte.GUI;
 
 import processing.core.*; //import processing
@@ -5,13 +6,15 @@ import java.awt.*;
 
 
 public class ButtonFromDocu extends PApplet{
-    /**
+    */
+/**
      * Button.
      *
      * Click on one of the colored shapes in the
      * center of the image to change the color of
      * the background.
-     */
+     *//*
+
 
     int rectX, rectY;      // Position of square button
     int circleX, circleY;  // Position of circle button
@@ -103,3 +106,4 @@ public class ButtonFromDocu extends PApplet{
         }
     }
 }
+*/

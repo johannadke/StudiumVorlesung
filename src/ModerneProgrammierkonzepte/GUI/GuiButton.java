@@ -1,3 +1,4 @@
+/*
 package ModerneProgrammierkonzepte.GUI;
 
 import processing.core.*; //import processing
@@ -28,3 +29,4 @@ public class GuiButton extends PApplet{
         parent.rect(x0, y0, width, height);
     }
 }
+*/
