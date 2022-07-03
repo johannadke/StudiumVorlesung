@@ -11,7 +11,7 @@ public class TestAutoSitzeException {
             }
             System.out.println("Der Sitz wurde " + mitOhne + " Leder in der Farbe " + myCar.getFarbe() + " bezogen.");
         } catch (FalscheParameter e) {
-            e.getMessage();
+            System.out.println(e.getMessage());
             System.out.println("Das Beziehen ist fehlgeschlagen");
         }
 
