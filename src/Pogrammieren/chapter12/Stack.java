@@ -2,9 +2,11 @@ package Pogrammieren.chapter12;
 
 public class Stack<T> {
     Node<T> firstNode = null;
+    private int size = 0;
 
     public void push(T data){
         firstNode = new Node<>(data, firstNode);
+        size ++;
     }
 
     public T peek(){
@@ -18,9 +20,14 @@ public class Stack<T> {
         if (firstNode != null){
             T data = firstNode.getData();
             firstNode = firstNode.getNextNode();
+            size --;
             return data;
         }
         return  null;
+    }
+
+    public int getSize() {
+        return size;
     }
 
     private class Node<T>{
