@@ -247,10 +247,16 @@ public class Aufgabe_MeldeamtUI extends JFrame {
 
         panel_north.add(nachrichtenLabel, FlowLayout.LEFT);
 
+       /* JPanel panel = new JPanel();
+        panel.add(new JButton("center"), BorderLayout.CENTER);
+        panel.add(new JButton("left"), BorderLayout.WEST);
+        this.add(panel, BorderLayout.EAST);*/
+
         this.setJMenuBar(menuBar);
         this.add(panel_north, BorderLayout.NORTH);
         this.add(panel_center, BorderLayout.CENTER);
         this.add(panel_south, BorderLayout.SOUTH);
+
 
         //Frame Configurations
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
