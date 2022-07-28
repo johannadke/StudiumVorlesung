@@ -1,6 +1,6 @@
 package Pogrammieren.Klausurvorbereitung;
 
-public class InnereKLassen {
+public class OuterClass {
         private int identifier;
 
         public static interface InnerInterface{
@@ -139,24 +139,24 @@ public class InnereKLassen {
             myLambdaFunction.print(message);
         }
 
-        public InnereKLassen(int identifier){
+        public OuterClass(int identifier){
             this.identifier = identifier;
         }
 
         public static void main(String[] args) {
             String message = "Hello World";
 
-            System.out.println(InnereKLassen.class.getName() + " - Äussere Klasse sagt: " + message);
+            System.out.println(OuterClass.class.getName() + " - Äussere Klasse sagt: " + message);
 
-            InnereKLassen.InnerTopLevelClass myInnerTopLevelClass = new InnereKLassen.InnerTopLevelClass();
+            OuterClass.InnerTopLevelClass myInnerTopLevelClass = new OuterClass.InnerTopLevelClass();
             myInnerTopLevelClass.print(message);
 
-            InnereKLassen myOuterClass = new InnereKLassen(42);
-            InnereKLassen.InnerElementClass myInnerElementClass = myOuterClass.new InnerElementClass();
+            OuterClass myOuterClass = new OuterClass(42);
+            OuterClass.InnerElementClass myInnerElementClass = myOuterClass.new InnerElementClass();
             myInnerElementClass.print(message);
 
-            InnereKLassen mySecondOuterClass = new InnereKLassen(99);
-            InnereKLassen.InnerElementClass myOtherInnerElementClass = mySecondOuterClass.new InnerElementClass();
+            OuterClass mySecondOuterClass = new OuterClass(99);
+            OuterClass.InnerElementClass myOtherInnerElementClass = mySecondOuterClass.new InnerElementClass();
             myOtherInnerElementClass.print(message);
 
             myOuterClass.printFromInnerLocalClass(message);
@@ -170,7 +170,7 @@ public class InnereKLassen {
             myOuterClass.myInnerAnonymousClass.print(message);
             mySecondOuterClass.myInnerAnonymousClass.print(message);
 
-            InnereKLassen.myInnerStaticAnonymousClass.print(message);
+            OuterClass.myInnerStaticAnonymousClass.print(message);
 
             myOuterClass.printFromLambdaFunction(message);
             myOuterClass.printFromShortedLambdaFunction(message);
