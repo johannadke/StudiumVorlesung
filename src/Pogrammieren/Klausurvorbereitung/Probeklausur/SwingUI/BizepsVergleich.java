@@ -22,6 +22,18 @@ public class BizepsVergleich extends JFrame {
 
         ActionListener zuhoerer = (e) -> {
             if(e.getActionCommand().equals(ACTION_VERGLEICHEN)){
+                int compareToResult = ((Comparable)bizepsBox1.getSelectedItem()).compareTo(bizepsBox2.getSelectedItem());
+                if(compareToResult == 0){
+                    System.out.println(tfSpieler1.getText() + " und " + tfSpieler2.getText() + " müssen trainieren!");
+                } else if(compareToResult > 0){
+                    System.out.println(tfSpieler1.getText() + " ist der Babo!");
+                } else {
+                    System.out.println(tfSpieler2.getText() + " ist der Babo!");
+                }
+            } else {
+                System.exit(0);
+            }
+            /*if(e.getActionCommand().equals(ACTION_VERGLEICHEN)){
                 if(bizepsBox1.getSelectedItem() == bizepsBox2.getSelectedItem()){
                     System.out.println(tfSpieler1.getText() + " und " + tfSpieler2.getText() + " müssen trainieren!");
                 } else if(((Comparable)bizepsBox1.getSelectedItem()).compareTo(bizepsBox2.getSelectedItem()) > 0){
@@ -31,7 +43,7 @@ public class BizepsVergleich extends JFrame {
                 }
             } else {
                 System.exit(0);
-            }
+            }*/
         };
 
 
